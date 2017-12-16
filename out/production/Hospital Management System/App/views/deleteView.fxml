@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="content" minHeight="345" minWidth="680" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.controllers.deleteController">
+    <center>
+    <VBox spacing="30" alignment="center">
+        <GridPane alignment="center" hgap="30">
+
+            <Label text="ID :" textFill="white" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <JFXTextField fx:id="textId" GridPane.columnIndex="1" GridPane.rowIndex="0" alignment="CENTER" />
+
+        </GridPane>
+
+        <JFXButton fx:id="deletebtn" graphicTextGap="10.0" onAction="#delete" styleClass="deletebtn" text="Delete" textAlignment="CENTER" alignment="center">
+            <graphic>
+                <FontAwesomeIconView fill="white" glyphName="MINUS_CIRCLE" size="30.0" strokeType="OUTSIDE" textAlignment="CENTER" />
+            </graphic>
+            <font>
+                <Font size="25.0" />
+            </font>
+        </JFXButton>
+    </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,24 @@
+.mainview{
+    -fx-background-color:#000000;
+}
+.table-col{
+    -fx-font-weight: bold;
+}
+.table-header{
+
+}
+JFXTextField{
+    -fx-text-fill:white;
+}
+.addbtn{
+    -fx-text-fill:white;
+}
+.deletebtn{
+    -fx-text-fill:white;
+}
+.updatebtn{
+    -fx-text-fill:white;
+}
+.searchbtn{
+    -fx-text-fill:white;
+}

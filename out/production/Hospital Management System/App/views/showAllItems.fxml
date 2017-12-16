@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="content" minHeight="345" minWidth="680" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="App.controllers.MainController" stylesheets="@styles/styles.css">
+    <top>
+        <VBox alignment="center" spacing="20">
+
+            <TableView fx:id="tableview" opacity="1" prefHeight="345" styleClass="table-header">
+                <columns>
+                    <TableColumn fx:id="colId" styleClass="table-col" text="id" />
+                    <TableColumn fx:id="colFirstName" prefWidth="150.0" styleClass="table-col" text="firstname" />
+                    <TableColumn fx:id="colLastName" prefWidth="150.0" styleClass="table-col" text="lastname" />
+                    <TableColumn fx:id="colAge" styleClass="table-col" text="age" />
+                    <TableColumn fx:id="colDisease" styleClass="table-col" text="disease" />
+                    <TableColumn fx:id="colRoom" styleClass="table-col" text="room" />
+                    <TableColumn fx:id="colDoctor" prefWidth="200" minWidth="200" styleClass="table-col" text="doctor" />
+                </columns>
+            </TableView>
+        </VBox>
+    </top>
+</BorderPane>
+

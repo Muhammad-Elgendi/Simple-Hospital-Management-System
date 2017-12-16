@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane styleClass="mainview" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="App.controllers.MainController">
+    <top>
+    <VBox alignment="center" spacing="10">
+
+        <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.5" preserveRatio="true" GridPane.rowIndex="1">
+            <image>
+                <Image url="@images/beats.gif" />
+            </image>
+        </ImageView>
+        <HBox alignment="center" spacing="10" GridPane.rowIndex="2">
+            <JFXButton fx:id="viewallbtn" text="View All" textFill="WHITE" onAction="#viewAll" />
+            <JFXButton fx:id="addbtn" text="Add" textFill="WHITE" onAction="#add"/>
+            <JFXButton fx:id="viewbtn" text="View" textFill="WHITE" onAction="#view"/>
+            <JFXButton fx:id="editbtn" text="Edit" textFill="WHITE" onAction="#edit"/>
+            <JFXButton fx:id="deletebtn" text="Delete" textFill="WHITE" onAction="#delete"/>
+        </HBox>
+        <BorderPane fx:id="content">
+            <top>
+                <TableView fx:id="tableview" opacity="1" prefHeight="345" styleClass="table-header">
+                    <columns>
+                        <TableColumn fx:id="colId" styleClass="table-col" text="id" />
+                        <TableColumn fx:id="colFirstName" prefWidth="150.0" styleClass="table-col" text="firstname" />
+                        <TableColumn fx:id="colLastName" prefWidth="150.0" styleClass="table-col" text="lastname" />
+                        <TableColumn fx:id="colAge" styleClass="table-col" text="age" />
+                        <TableColumn fx:id="colDisease" styleClass="table-col" text="disease" />
+                        <TableColumn fx:id="colRoom" styleClass="table-col" text="room" />
+                        <TableColumn fx:id="colDoctor" prefWidth="150.0" styleClass="table-col" text="doctor" />
+                    </columns>
+                </TableView>
+            </top>
+        </BorderPane>
+        <padding>
+            <Insets left="10" right="10" />
+        </padding>
+    </VBox>
+    </top>
+
+
+</BorderPane>
